@@ -1,0 +1,12 @@
+[
+    ["category", "subcategories"],
+    ["Misc", ["Game", "Trick", "Trivia"]],
+    ["School Subjects", ["Math", "Biology", "Chemistry", "Physics", "History", "Geography", "Psychology", "Politics"]],
+    ["IT", ["Programming", "Security", "Web", "Electronic", "AI"]],
+    ["Creative", ["Art", "Photography", "Filmmaking", "Music", "Writing"]],
+    ["House Keeping", ["Gardening", "Building", "Repairs"]],
+    ["Language", []],
+    ["Cooking", ["Baking"]],
+    ["Sport", ["Dancing"]],
+    ["Useful", []]
+]

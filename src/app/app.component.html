@@ -1,0 +1,55 @@
+<div class="container">
+  <div>
+    <h1>Learn Something New</h1>
+    <p class="description">
+      Want to learn something new? But don't know what? This small project is
+      for exactly this situation. It will give you a random suggestion - maybe
+      even something that will suprise/interest you!
+    </p>
+    <details>
+      <summary>How to Use?</summary>
+      <div class="italic description">
+        1. Just click on the button 'I want to learn something new!'
+        <br />
+        2. When selecting the categories, you can select the main(first)
+        category to select all subcategories. (You can also select only the main
+        category, it might contain things not fitting in the subcategories.)
+        <br />
+        3. Then select the time you want to spend. (These are just very rough
+        estimations.)
+        <br />
+        4. Then you select how much money you want to spend. (Again, very rough
+        estimations.)
+        <br />
+        Generally, the categories can be seen as very subjective and it can vary
+        greatly how much time/money you would actually spend. Since in the end
+        you choose how much time/money you want to put into it. There are also
+        some things to learn, where it might depend on if you want to learn only
+        the theory or also apply it.
+      </div>
+    </details>
+  </div>
+
+  <div class="box">
+    <h3>What to learn:</h3>
+    <button *ngIf="show_button" (click)="onStartSelecting()">
+      I want to learn something new!
+    </button>
+    <ng-template #viewContainerRef></ng-template>
+  </div>
+
+  <div class="output" *ngIf="learn.length > 0">
+    <h3>Learn (How To/About):</h3>
+    <div id="learn">
+      <p>{{ learn.toString() | uppercase }}</p>
+    </div>
+
+    <p>{{ description }}</p>
+    <p>{{ resources }}</p>
+  </div>
+  <div *ngIf="learn.length > 0">
+    <button (click)="newChoice()">I do not feel like it...</button>
+  </div>
+
+  <app-stats [skills]="parser.skills"></app-stats>
+</div>

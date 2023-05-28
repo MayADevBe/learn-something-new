@@ -1,0 +1,13 @@
+<h4>Select how much time you want to spend!</h4>
+
+<form id="form" (submit)="select_times($event)">
+  <div class="checkboxes">
+    <div class="outer" *ngFor="let t of times">
+      <label>
+        <input id="{{ t }}" type="checkbox" hidden />
+        <span class="ck-button">{{ t }}</span>
+      </label>
+    </div>
+  </div>
+  <button type="submit">The time, I have chosen!</button>
+</form>
