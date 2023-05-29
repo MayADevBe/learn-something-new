@@ -16,4 +16,4 @@ You can:
 - write me an email or on twitter
 - open an issue
 - make a pull request
-  (When making a pull request please make sure that you edited all the json files (in the asset folder) as necessary. Try to avoid adding unecessary new tags for categories, money and times. The structure for the skills is as follows: `[ "skill",["category1", "category2"],["time1", "time2],["money1"],"description","resources" ]`)
+  (When making a pull request please make sure that you edited all the json files (in the asset folder) as necessary. Try to avoid adding unecessary new tags for categories, money and times. Also try avoiding adding redundant things. The structure for the skills is as follows: `[ "skill",["category1", "category2"],["time1", "time2],["money1"],"description","resources" ]`)

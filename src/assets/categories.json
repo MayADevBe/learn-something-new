@@ -4,9 +4,8 @@
     ["School Subjects", ["Math", "Biology", "Chemistry", "Physics", "History", "Geography", "Psychology", "Politics"]],
     ["IT", ["Programming", "Security", "Web", "Electronic", "AI"]],
     ["Creative", ["Art", "Photography", "Filmmaking", "Music", "Writing"]],
-    ["House Keeping", ["Gardening", "Building", "Repairs"]],
+    ["Housework", ["Gardening", "Building", "Repairs", "Cooking", "Baking"]],
     ["Language", []],
-    ["Cooking", ["Baking"]],
     ["Sport", ["Dancing"]],
     ["Useful", []]
 ]
