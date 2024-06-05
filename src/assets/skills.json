@@ -147,7 +147,7 @@
     [ "Use Google Search", ["IT", "Security", "Useful"], ["day"], ["free"], "", "" ],
     [ "Reverse Image Search", ["IT", "Security", "Useful"], ["day"], ["free"], "", "" ],
     [ "OSINT", ["IT", "Security"], ["day", "week", "month"], ["free", "mid", "expensive"], "", "" ],
-    [ "Ava Lovelace", ["IT", "Math", "School Subjects"], ["hour", "day"], ["free"], "", "" ],
+    [ "Ada Lovelace", ["IT", "Math", "School Subjects"], ["hour", "day"], ["free"], "", "" ],
     [ "Alan Turing", ["IT", "Security", "Math", "School Subjects"], ["hour", "day"], ["free"], "", "" ],
     [ "Turing Machine", ["IT"], ["day"], ["free"], "", "" ],
     [ "Turing Test", ["IT", "AI"], ["hour", "day"], ["free"], "", "" ],
