@@ -1,12 +1,12 @@
 import { NgModule } from '@angular/core';
-import { BrowserModule } from '@angular/platform-browser';
+import { bootstrapApplication, BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { SelectCategoryComponent } from './select-category/select-category.component';
 import { SelectTimeComponent } from './select-time/select-time.component';
 import { SelectMoneyComponent } from './select-money/select-money.component';
 import { StatsComponent } from './stats/stats.component';
-import { DragScrollModule } from 'ngx-drag-scroll';
+import { DragScrollComponent, DragScrollItemDirective } from 'ngx-drag-scroll';
 import { NgxChartsModule } from '@swimlane/ngx-charts';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import {
@@ -45,6 +45,9 @@ const cookieConfig: NgcCookieConsentConfig = {
 
 @NgModule({
   declarations: [
+    
+  ],
+  exports: [
     AppComponent,
     SelectCategoryComponent,
     SelectTimeComponent,
@@ -54,11 +57,19 @@ const cookieConfig: NgcCookieConsentConfig = {
   imports: [
     BrowserModule,
     NgxChartsModule,
-    DragScrollModule,
+    DragScrollComponent,
+    DragScrollItemDirective,
     BrowserAnimationsModule,
     NgcCookieConsentModule.forRoot(cookieConfig),
+    AppComponent,
+    SelectCategoryComponent,
+    SelectTimeComponent,
+    SelectMoneyComponent,
+    StatsComponent,
   ],
   providers: [],
-  bootstrap: [AppComponent],
+  bootstrap: [],
 })
 export class AppModule {}
+
+bootstrapApplication(AppComponent);

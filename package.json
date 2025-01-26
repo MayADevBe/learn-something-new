@@ -54,5 +54,27 @@
     "karma-jasmine": "~5.1.0",
     "karma-jasmine-html-reporter": "~2.1.0",
     "typescript": "~5.7.3"
-  }
+  },
+  "overrides": {
+    "@swimlane/ngx-charts": { 
+      "@angular/animations@": ">=18.0.0",
+      "@angular/cdk@": ">=18.0.0",
+      "@angular/common@": ">=18.0.0",
+      "@angular/core@": ">=18.0.0",
+      "@angular/forms@": ">=18.0.0",
+      "@angular/platform-browser@": ">=18.0.0",
+      "@angular/platform-browser-dynamic@": ">=18.0.0",
+      "@angular/router@": ">=18.0.0"
+    },
+    "ngx-drag-scroll": {
+      "@angular/animations@": ">=18.0.0",
+      "@angular/cdk@": ">=18.0.0",
+      "@angular/common@": ">=18.0.0",
+      "@angular/core@": ">=18.0.0",
+      "@angular/forms@": ">=18.0.0",
+      "@angular/platform-browser@": ">=18.0.0",
+      "@angular/platform-browser-dynamic@": ">=18.0.0",
+      "@angular/router@": ">=18.0.0"
+    }
+  } 
 }

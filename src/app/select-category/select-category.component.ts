@@ -2,9 +2,11 @@
 /* eslint-disable @angular-eslint/no-output-on-prefix */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
 import { Category } from '../json-parser';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-select-category',
+  imports: [CommonModule],
   templateUrl: './select-category.component.html',
   styleUrls: ['./select-category.component.css'],
 })

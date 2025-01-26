@@ -1,9 +1,13 @@
 import { Component, Input } from '@angular/core';
 import { Skill } from '../json-parser';
-import { LegendPosition } from '@swimlane/ngx-charts';
+import { LegendPosition, NgxChartsModule } from '@swimlane/ngx-charts';
+import { CommonModule } from '@angular/common';
+import { DragScrollComponent, DragScrollItemDirective } from 'ngx-drag-scroll';
+
 
 @Component({
   selector: 'app-stats',
+  imports: [DragScrollComponent, NgxChartsModule, CommonModule],
   templateUrl: './stats.component.html',
   styleUrls: ['./stats.component.css'],
 })

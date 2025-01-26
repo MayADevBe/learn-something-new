@@ -16,9 +16,13 @@ import {
   NgcStatusChangeEvent,
 } from 'ngx-cookieconsent';
 import { Subscription } from 'rxjs';
+import { CommonModule, UpperCasePipe } from '@angular/common';
+import { StatsComponent } from "./stats/stats.component";
+
 
 @Component({
   selector: 'app-root',
+  imports: [UpperCasePipe, StatsComponent, CommonModule],
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css'],
 })

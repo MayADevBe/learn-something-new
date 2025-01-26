@@ -1,8 +1,10 @@
 /* eslint-disable @angular-eslint/no-output-on-prefix */
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-select-money',
+  imports: [CommonModule],
   templateUrl: './select-money.component.html',
   styleUrls: ['./select-money.component.css'],
 })

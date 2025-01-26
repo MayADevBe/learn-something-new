@@ -1,7 +1,9 @@
 import { Component, EventEmitter, Input, Output } from '@angular/core';
+import { CommonModule } from '@angular/common';
 
 @Component({
   selector: 'app-select-time',
+  imports: [CommonModule],
   templateUrl: './select-time.component.html',
   styleUrls: ['./select-time.component.css'],
 })
